@@ -1,79 +1,103 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <title>Seminar XML</title>
-  <style>
-    body {
-      color: black;
-    }
-
-    button {
-      padding: 15px 25px;
-      font-size: 24px;
-      text-align: center;
-      cursor: pointer;
-      outline: none;
-      color: #fff;
-      background-color: gray;
-      border: none;
-      border-radius: 15px;
-    }
-
-    button:hover {
-      background-color: #3e8e41
-    }
-
-    button:active {
-      background-color: #3e8e41;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th,
-    td {
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: lightgrey
-    }
-
-    th {
-      background-color: white;
-      color: grey;
-    }
-
-    #input {
-      width: 150px;
-      border-radius: 10px;
-      border: 1px solid black;
-      text-align: center;
-    }
-  </style>
+    <title>Prodaja videoigara</title>
+    <style>
+        h1 {color: white;}
+        
+        img.slike
+        {
+            width: 235px;
+            height: 235px;
+        }
+        
+        button.main
+        {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #0D4F8B;
+            border: none;
+            border-radius: 15px;
+        }
+        
+        button.filter
+        {
+            padding: 10px 17px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #0D4F8B;
+            border: none;
+        }
+        
+        button:hover
+        {
+            background-color: #000000
+        }
+        
+        table
+        {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,td
+        {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th,tr
+        {
+            color: white;
+        }
+        
+        tr:hover {background-color: #000000;}
+        
+        tr:nth-child(even):hover
+        {
+            background-color: #000000;
+        }
+        
+        tr:nth-child(even)
+        {
+            background-color: #0D4F8B;
+        }
+        
+    </style>
 </head>
-<h2>Kliknite za prikaz svih tvrtki i njihovih direktora!</h2>
+<body bgcolor="#003F87">
 
-  <button id="otvori" type="button" onclick="generirajImeDirektor();">Otvori</button></br>
-  </br>
-  
-  </br>
-  <table id="tablica"></table>
-  </div>
-  </br>
+<h1 align="center"> Prodaja videoigara </h1>
+<br>
 
-<h2>Top 10 tvrtka po prosjecnoj placi</h2>
+<div align="center">
+    <img class="slike" src="rdr.jpg" alt="Italian Trulli">
+    <img class="slike" src="gow.jpg" alt="Italian Trulli">
+    <img class="slike" src="detroit.jpg" alt="Italian Trulli">
+    <img class="slike" src="spiderman.jpg" alt="Italian Trulli">
+    <img class="slike" src="days.jpg" alt="Italian Trulli">
+</div>
+<br>
+<br>
+<div align="center">
+    <button id="otvori" class="main" type="button" onclick="generirajImeDirektor();">Sve</button>
+    <button class="main" type="button" onclick="top10();">Najprodavanije</button>
+    <button class="main" type="button">Nove</button>
+    <button class="filter" type="button">Cijena &#8593</button>
+    <button class="filter" type="button">Cijena &#8595</button>
+</div>
+<br><br>
+<table id="tablica"></table>
 
-  <table id="tablica10" on="top10()"></table>
-
-
-  <script>
+<script>
     window.onload = function() {
  top10();
 };
@@ -97,7 +121,7 @@
         xmlhttp.send();
       }
       else {
-        buttonOpen.innerHTML = "Otvori";
+        buttonOpen.innerHTML = "Sve";
 
         tablicaHide.style.display = "none";
       }
@@ -108,7 +132,7 @@
     function tablica(xml) {
       var i;
       var xmlDoc = xml.responseXML;
-      var table = "<tr><th>Tvrtka</th><th>Direktor</th></tr>";
+      var table = "<tr><th>Igra</th><th>Izdavač</th></tr>";
       var x = xmlDoc.getElementsByTagName("tvrtka");
       for (i = 0; i < x.length; i++) {
         table += "<tr><td>" +
@@ -155,29 +179,8 @@
       document.getElementById("tablica10").innerHTML = table;
 
     }
-
-
-    function GenerirajSlovo(slovo) {
-      var isEmpty = document.getElementById('slovo').innerHTML === "";
-      if (isEmpty === true) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "tvrtke.xml", false);
-        xmlhttp.send('');
-        xmlDoc = xmlhttp.responseXML;
-        divIspis = document.getElementById("slovo");
-        element = xmlDoc.getElementsByTagName("ime");
-        for (j = 0; j < element.length; j++) {
-          if (element[j].childNodes[0].nodeValue[0] == slovo) {
-            divIspis.innerHTML += element[j].childNodes[0].nodeValue;
-            divIspis.innerHTML += "<br />";
-          }
-        }
-      }
-      else if (isEmpty === false) {
-        document.getElementById('slovo').innerHTML = "";
-      }
-    }
+    
   </script>
-</body>
 
+</body>
 </html>
