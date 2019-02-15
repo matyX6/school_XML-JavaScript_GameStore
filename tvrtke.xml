@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poslovne_organizacije>
+ <tvrtka>
+  <ime>Marcus d.o.o</ime>
+  <godina_osnivanja>2001</godina_osnivanja>
+  <direktor>Marko Božinić</direktor>
+  <broj_radnika>54</broj_radnika>
+  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
+  <prosjecna_placa>4700</prosjecna_placa>
+  <lokacija>Ivanec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Palus</ime>
+  <godina_osnivanja>1999</godina_osnivanja>
+  <direktor>Martina Kos</direktor>
+  <broj_radnika>85</broj_radnika>
+  <tema_poslovanja>Programiranje u bankarskim sustavima</tema_poslovanja>
+  <prosjecna_placa>6800</prosjecna_placa>
+  <lokacija>Budinščina</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Abitus</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Karlo Mišenić</direktor>
+  <broj_radnika>48</broj_radnika>
+  <tema_poslovanja>Prodaje Elektronike i Elektronskih komponenta</tema_poslovanja>
+  <prosjecna_placa>4400</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Kronia</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Tena Bešlag</direktor>
+  <broj_radnika>40</broj_radnika>
+  <tema_poslovanja>Boje i lakovi</tema_poslovanja>
+  <prosjecna_placa>4300</prosjecna_placa>
+  <lokacija>Ivanec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Borus</ime>
+  <godina_osnivanja>2010</godina_osnivanja>
+  <direktor>Bruno Pešlaj</direktor>
+  <broj_radnika>64</broj_radnika>
+  <tema_poslovanja>Java i Javascript aplikacije</tema_poslovanja>
+  <prosjecna_placa>6200</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Mirnovec</ime>
+  <godina_osnivanja>2002</godina_osnivanja>
+  <direktor>Matija Kapustić</direktor>
+  <broj_radnika>90</broj_radnika>
+  <tema_poslovanja>Pirotehnika</tema_poslovanja>
+  <prosjecna_placa>5100</prosjecna_placa>
+  <lokacija>Mirnovec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Cekin</ime>
+  <godina_osnivanja>1998</godina_osnivanja>
+  <direktor>Patricia Kelemen</direktor>
+  <broj_radnika>145</broj_radnika>
+  <tema_poslovanja>Mesne prerađevine</tema_poslovanja>
+  <prosjecna_placa>3900</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Abit</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Tihomir Makar</direktor>
+  <broj_radnika>65</broj_radnika>
+  <tema_poslovanja>Programiranje u bankarskim sustava</tema_poslovanja>
+  <prosjecna_placa>5300</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Ixc</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Matija Petrović</direktor>
+  <broj_radnika>70</broj_radnika>
+  <tema_poslovanja>Napredno programiranje u inozemstvu</tema_poslovanja>
+  <prosjecna_placa>7400</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Vindija</ime>
+  <godina_osnivanja>1989</godina_osnivanja>
+  <direktor>Karlo Strupar</direktor>
+  <broj_radnika>230</broj_radnika>
+  <tema_poslovanja>Proizvodnja mliječnih i mesnih proizvoda</tema_poslovanja>
+  <prosjecna_placa>3500</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Mania</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Mislav Bistrović</direktor>
+  <broj_radnika>68</broj_radnika>
+  <tema_poslovanja>Trikotaža</tema_poslovanja>
+  <prosjecna_placa>4100</prosjecna_placa>
+  <lokacija>Karlovac</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Mana</ime>
+  <godina_osnivanja>2000</godina_osnivanja>
+  <direktor>Darko Tomić</direktor>
+  <broj_radnika>145</broj_radnika>
+  <tema_poslovanja>Izrada i prodaja odijeće</tema_poslovanja>
+  <prosjecna_placa>3900</prosjecna_placa> 
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Kesten</ime>
+  <godina_osnivanja>1986</godina_osnivanja>
+  <direktor>Stijepan Mikulić</direktor>
+  <broj_radnika>90</broj_radnika>
+  <tema_poslovanja>Prerađevina drva</tema_poslovanja>
+  <prosjecna_placa>5100</prosjecna_placa>
+  <lokacija>Opatija</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Aerobit</ime>
+  <godina_osnivanja>2011</godina_osnivanja>
+  <direktor>Ernest Belcar</direktor>
+  <broj_radnika>50</broj_radnika>
+  <tema_poslovanja>Izrada i dizajn maketa</tema_poslovanja>
+  <prosjecna_placa>6200</prosjecna_placa>
+  <lokacija>Pula</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Urar d.o.o.</ime>
+  <godina_osnivanja>1994</godina_osnivanja>
+  <direktor>Franjo Tvarog</direktor>
+  <broj_radnika>15</broj_radnika>
+  <tema_poslovanja>Izrada i popravak satova</tema_poslovanja>
+  <prosjecna_placa>4300</prosjecna_placa>
+  <lokacija>Lepoglava</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pavlini</ime>
+  <godina_osnivanja>2016</godina_osnivanja>
+  <direktor>Ivica Bračko</direktor>
+  <broj_radnika>10</broj_radnika>
+  <tema_poslovanja>Izrada pekarskih i mesnih proizvoda</tema_poslovanja>
+  <prosjecna_placa>3800</prosjecna_placa>
+  <lokacija>Lepoglava</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Matija d.o.o.</ime>
+  <godina_osnivanja>1992</godina_osnivanja>
+  <direktor>Biljana Migač</direktor>
+  <broj_radnika>9</broj_radnika>
+  <tema_poslovanja>Veleprodaja i maloprodaja metalne i plastične galanterije</tema_poslovanja>
+  <prosjecna_placa>4200</prosjecna_placa>
+  <lokacija>Ivanec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pivac</ime>
+  <godina_osnivanja>1995</godina_osnivanja>
+  <direktor>Matija Klobučarić</direktor>
+  <broj_radnika>60</broj_radnika>
+  <tema_poslovanja>Prodaja mesnih prerađevina</tema_poslovanja>
+  <prosjecna_placa>3800</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Merkit</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Martin Štefan</direktor>
+  <broj_radnika>43</broj_radnika>
+  <tema_poslovanja>Botanička oprema</tema_poslovanja>
+  <prosjecna_placa>4600</prosjecna_placa>
+  <lokacija>Križevci</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Bornat</ime>
+  <godina_osnivanja>2006</godina_osnivanja>
+  <direktor>Borna Klečić</direktor>
+  <broj_radnika>23</broj_radnika>
+  <tema_poslovanja>Otkup papirnih i kartonskih proizvoda</tema_poslovanja>
+  <prosjecna_placa>3700</prosjecna_placa>
+  <lokacija>Golubovec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Mikus</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Luka Gotovac</direktor>
+  <broj_radnika>18</broj_radnika>
+  <tema_poslovanja>Prodaja i izrada tepiserije</tema_poslovanja>
+  <prosjecna_placa>4000</prosjecna_placa>
+  <lokacija>Krapina</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pekom</ime>
+  <godina_osnivanja>1999</godina_osnivanja>
+  <direktor>Ivica Petrović</direktor>
+  <broj_radnika>11</broj_radnika>
+  <tema_poslovanja>Proizvodnja i prodaja pekarskih proizvoda</tema_poslovanja>
+  <prosjecna_placa>4200</prosjecna_placa>
+  <lokacija>Krapina</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Lepa</ime>
+  <godina_osnivanja>1982</godina_osnivanja>
+  <direktor>Ljubomir Makčić</direktor>
+  <broj_radnika>260</broj_radnika>
+  <tema_poslovanja>Obrada drvnih sirovina</tema_poslovanja>
+  <prosjecna_placa>4200</prosjecna_placa>
+  <lokacija>Lepoglava</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Koprat d.o.o.</ime>
+  <godina_osnivanja>2002</godina_osnivanja>
+  <direktor>Tanja Krasni</direktor>
+  <broj_radnika>32</broj_radnika>
+  <tema_poslovanja>Studio za mlade glazbenike</tema_poslovanja>
+  <prosjecna_placa>4500</prosjecna_placa>
+  <lokacija>Zlatar</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pismo</ime>
+  <godina_osnivanja>1994</godina_osnivanja>
+  <direktor>Dejan Varović</direktor>
+  <broj_radnika>52</broj_radnika>
+  <tema_poslovanja>Proizvodnja i prodaja markica</tema_poslovanja>
+  <prosjecna_placa>4300</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Aron</ime>
+  <godina_osnivanja>2012</godina_osnivanja>
+  <direktor>Ksenija Volarić</direktor>
+  <broj_radnika>30</broj_radnika>
+  <tema_poslovanja>Otklanjanje otpada s privatnih i javnih povrsšina</tema_poslovanja>
+  <prosjecna_placa>3400</prosjecna_placa>
+  <lokacija>Bednja</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Dom za domaće</ime>
+  <godina_osnivanja>2000</godina_osnivanja>
+  <direktor>Jasmin Cikač</direktor>
+  <broj_radnika>23</broj_radnika>
+  <tema_poslovanja>Uzgajanje i prodaja domaćih životinja</tema_poslovanja>
+  <prosjecna_placa>3900</prosjecna_placa>
+  <lokacija>Vidovec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Sunce d.o.o.</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Sanja Jagić</direktor>
+  <broj_radnika>30</broj_radnika>
+  <tema_poslovanja>Pomoć starijima i nemoćnim osobama</tema_poslovanja>
+  <prosjecna_placa>4600</prosjecna_placa>
+  <lokacija>Visoko</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>HEW</ime>
+  <godina_osnivanja>1995</godina_osnivanja>
+  <direktor>Tihomir Bračko</direktor>
+  <broj_radnika>340</broj_radnika>
+  <tema_poslovanja>Proizvodnja elektromotora i transformatora</tema_poslovanja>
+  <prosjecna_placa>5000</prosjecna_placa>
+  <lokacija>Ivanec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Xenox</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Jasenka Božinić</direktor>
+  <broj_radnika>46</broj_radnika>
+  <tema_poslovanja>Programiranje na razini zaštite software-a</tema_poslovanja>
+  <prosjecna_placa>6000</prosjecna_placa>
+  <lokacija>Samobor</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Orion</ime>
+  <godina_osnivanja>2004</godina_osnivanja>
+  <direktor>Ivan Balažinec</direktor>
+  <broj_radnika>85</broj_radnika>
+  <tema_poslovanja>Pirotehnika</tema_poslovanja>
+  <prosjecna_placa>4200</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Lucas</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Karolina Čretni</direktor>
+  <broj_radnika>30</broj_radnika>
+  <tema_poslovanja>Poljodom</tema_poslovanja>
+  <prosjecna_placa>3800</prosjecna_placa>
+  <lokacija>Začretje</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Saxon</ime>
+  <godina_osnivanja>2009</godina_osnivanja>
+  <direktor>Dante Kovač</direktor>
+  <broj_radnika>8</broj_radnika>
+  <tema_poslovanja>Glazbeni studio</tema_poslovanja>
+  <prosjecna_placa>4000</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Markoteka</ime>
+  <godina_osnivanja>2014</godina_osnivanja>
+  <direktor>Marko Blaguš</direktor>
+  <broj_radnika>6</broj_radnika>
+  <tema_poslovanja>Najam računala, računalne periferije i konzola</tema_poslovanja>
+  <prosjecna_placa>4000</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Piksel</ime>
+  <godina_osnivanja>2015</godina_osnivanja>
+  <direktor>Nadica Bajsić</direktor>
+  <broj_radnika>14</broj_radnika>
+  <tema_poslovanja>Dizajn i izrada web stranica</tema_poslovanja>
+  <prosjecna_placa>5100</prosjecna_placa>
+  <lokacija>Zagreb</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pandorium</ime>
+  <godina_osnivanja>2009</godina_osnivanja>
+  <direktor>Mihael Končevski</direktor>
+  <broj_radnika>33</broj_radnika>
+  <tema_poslovanja>Usluge šivanja i izrade zakrpa</tema_poslovanja>
+  <prosjecna_placa>4150</prosjecna_placa>
+  <lokacija>Ivanec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Krešo i sinovi</ime>
+  <godina_osnivanja>2005</godina_osnivanja>
+  <direktor>Krešimir Pavić</direktor>
+  <broj_radnika>5</broj_radnika>
+  <tema_poslovanja>Autoradiona</tema_poslovanja>
+  <prosjecna_placa>4700</prosjecna_placa>
+  <lokacija>Koškovec</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Vulkanizerstvo d.o.o.</ime>
+  <godina_osnivanja>2001</godina_osnivanja>
+  <direktor>Neven Kušter</direktor>
+  <broj_radnika>7</broj_radnika>
+  <tema_poslovanja>Prodaja guma</tema_poslovanja>
+  <prosjecna_placa>3800</prosjecna_placa>
+  <lokacija>Korčula</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Sonur</ime>
+  <godina_osnivanja>2017</godina_osnivanja>
+  <direktor>Petar Kišićek</direktor>
+  <broj_radnika>12</broj_radnika>
+  <tema_poslovanja>Najam glazbene opreme</tema_poslovanja>
+  <prosjecna_placa>4200</prosjecna_placa>
+  <lokacija>Koprivnica</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Stripoteka</ime>
+  <godina_osnivanja>2000</godina_osnivanja>
+  <direktor>Josipa Majerović</direktor>
+  <broj_radnika>9</broj_radnika>
+  <tema_poslovanja>Kupnja i prodaja stripova</tema_poslovanja>
+  <prosjecna_placa>3700</prosjecna_placa>
+  <lokacija>Bedekovčina</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Tvornica misli</ime>
+  <godina_osnivanja>2008</godina_osnivanja>
+  <direktor>Petra Kolenko</direktor>
+  <broj_radnika>17</broj_radnika>
+  <tema_poslovanja>Izdavač Časopisa i usluge tiskanja/printanja</tema_poslovanja>
+  <prosjecna_placa>4700</prosjecna_placa>
+  <lokacija>Sisak</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Bogus</ime>
+  <godina_osnivanja>2003</godina_osnivanja>
+  <direktor>Mateja Konički</direktor>
+  <broj_radnika>26</broj_radnika>
+  <tema_poslovanja>Usluge kopiranja i printanja</tema_poslovanja>
+  <prosjecna_placa>3800</prosjecna_placa>
+  <lokacija>Varaždin</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Hekom</ime>
+  <godina_osnivanja>1994</godina_osnivanja>
+  <direktor>Ivan Pernik</direktor>
+  <broj_radnika>67</broj_radnika>
+  <tema_poslovanja>Spajanje vodova plina i vode</tema_poslovanja>
+  <prosjecna_placa>5100</prosjecna_placa>
+  <lokacija>Horvatsko</lokacija>
+ </tvrtka>
+ <tvrtka>
+  <ime>Pisanje i ostalo</ime>
+  <godina_osnivanja>2013</godina_osnivanja>
+  <direktor>Kristina Kalnički</direktor>
+  <broj_radnika>15</broj_radnika>
+  <tema_poslovanja>Usluge i savjeti kod pisanja pravnih dokumenata</tema_poslovanja>
+  <prosjecna_placa>5200</prosjecna_placa>
+  <lokacija>Puščine</lokacija>
+ </tvrtka>
+</poslovne_organizacije>
