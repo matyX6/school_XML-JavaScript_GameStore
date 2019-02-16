@@ -10,7 +10,7 @@
  <igra>
   <ime>God of War</ime>
   <izdavac>Sony Interactive Entertainment</izdavac>
-  <cijena>500</cijena>
+  <cijena>499</cijena>
   <prodano>6500</prodano>
   <status>-</status>
  </igra>
@@ -138,6 +138,76 @@
   <izdavac>Sony Interactive Entertainment</izdavac>
   <cijena>349</cijena>
   <prodano>4900</prodano>
+  <status>-</status>
+ </igra>
+ <igra>
+  <ime>FIFA 19</ime>
+  <izdavac>Electronic Arts</izdavac>
+  <cijena>399</cijena>
+  <prodano>4400</prodano>
+  <status>Novo!</status>
+ </igra>
+ <igra>
+  <ime>Battlefield V</ime>
+  <izdavac>Electronic Arts</izdavac>
+  <cijena>399</cijena>
+  <prodano>4000</prodano>
+  <status>Novo!</status>
+ </igra>
+ <igra>
+  <ime>Anthem</ime>
+  <izdavac>Electronic Arts</izdavac>
+  <cijena>549</cijena>
+  <prodano>2100</prodano>
+  <status>Prednarudžba.</status>
+ </igra>
+ <igra>
+  <ime>Tom Clancy’s The Division 2</ime>
+  <izdavac>Ubisoft</izdavac>
+  <cijena>549</cijena>
+  <prodano>3000</prodano>
+  <status>Prednarudžba.</status>
+ </igra>
+ <igra>
+  <ime>Far Cry New Dawn</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>449</cijena>
+  <prodano>2000</prodano>
+  <status>Novo!</status>
+ </igra>
+ <igra>
+  <ime>DiRT Rally 2.0</ime>
+  <izdavac>Codemasters</izdavac>
+  <cijena>549</cijena>
+  <prodano>2100</prodano>
+  <status>Prednarudžba.</status>
+ </igra>
+ <igra>
+  <ime>Devil May Cry 5</ime>
+  <izdavac>Capcom</izdavac>
+  <cijena>549</cijena>
+  <prodano>3300</prodano>
+  <status>Prednarudžba.</status>
+ </igra>
+ <igra>
+  <ime>Kingdom Hearts III</ime>
+  <izdavac>Square Enix</izdavac>
+  <cijena>499</cijena>
+  <prodano>2500</prodano>
+  <status>Novo!</status>
+ </igra>
+ <igra>
+  <ime>Shadow of the Tomb Raider</ime>
+  <izdavac>Square Enix</izdavac>
+  <cijena>449</cijena>
+  <prodano>3000</prodano>
+  <status>Novo!</status>
+ </igra>
+ <igra>
+  <ime>Rocket League</ime>
+  <izdavac>Psyonix</izdavac>
+  <cijena>199</cijena>
+  <prodano>7500</prodano>
   <status>-</status>
  </igra>
 </videoigre>
