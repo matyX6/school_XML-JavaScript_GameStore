@@ -90,7 +90,8 @@
 <div align="center">
     <button id="otvori" class="main" type="button" onclick="sveIgre();">Sve</button>
     <button class="main" type="button" onclick="top10();">Najprodavanije</button>
-    <button class="main" type="button">Nove</button>
+    <button class="main" type="button" onclick="sveNove();">Nove</button>
+    <button class="main" type="button" onclick="svePrednarudzbe();">Prednarudžba</button>
     <button class="filter" type="button">Cijena &#8593</button>
     <button class="filter" type="button">Cijena &#8595</button>
 </div>
@@ -112,17 +113,47 @@
             tablica(this);
           }
         };
-        xmlhttp.open("GET", "tvrtke.xml", true);
+        xmlhttp.open("GET", "igre.xml", true);
+        xmlhttp.send();
+    }
+    
+    function sveNove()
+    {
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            tablicaNoveIgre(this);
+          }
+        };
+        xmlhttp.open("GET", "igre.xml", true);
+        xmlhttp.send();
+    }
+    
+    function svePrednarudzbe()
+    {
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            tablicaPrednarudzbe(this);
+          }
+        };
+        xmlhttp.open("GET", "igre.xml", true);
         xmlhttp.send();
     }
 
     function tablica(xml) {
       var i;
+      var brojac = 0;
       var xmlDoc = xml.responseXML;
-      var table = "<tr><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodanih primjeraka</th><th>Status</th></tr>";
-      var x = xmlDoc.getElementsByTagName("tvrtka");
+      var table = "<tr><th>#</th><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodano primjeraka</th><th>Status</th></tr>";
+      var x = xmlDoc.getElementsByTagName("igra");
       for (i = 0; i < x.length; i++) {
+        brojac++;
         table += "<tr><td>" +
+          brojac + "." +
+          "</td><td>" +
           x[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue +
           "</td><td>" +
           x[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue +
@@ -136,43 +167,102 @@
       }
       document.getElementById("tablica").innerHTML = table;
     }
+    
+    function tablicaNoveIgre(xml) {
+      var i;
+      var brojac = 0;
+      var xmlDoc = xml.responseXML;
+      var table = "<tr><th>#</th><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodano primjeraka</th><th>Status</th></tr>";
+      var x = xmlDoc.getElementsByTagName("igra");
+      for (i = 0; i < x.length; i++) {
+       if(x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue.toString() === "Novo!")
+       {
+        brojac++;
+        table += "<tr><td>" +
+          brojac + "." +
+          "</td><td>" +
+          x[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("cijena")[0].childNodes[0].nodeValue + " kn" +
+          "</td><td>" +
+          x[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue +
+          "</td></tr>";
+       }
+      }
+      document.getElementById("tablica").innerHTML = table;
+    }
+    
+    function tablicaPrednarudzbe(xml) {
+      var i;
+      var brojac = 0;
+      var xmlDoc = xml.responseXML;
+      var table = "<tr><th>#</th><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodano primjeraka</th><th>Status</th></tr>";
+      var x = xmlDoc.getElementsByTagName("igra");
+      for (i = 0; i < x.length; i++) {
+       if(x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue.toString() === "Prednarudžba.")
+       {
+        brojac++;
+        table += "<tr><td>" +
+          brojac + "." +
+          "</td><td>" +
+          x[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("cijena")[0].childNodes[0].nodeValue + " kn" +
+          "</td><td>" +
+          x[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue +
+          "</td></tr>";
+       }
+      }
+      document.getElementById("tablica").innerHTML = table;
+    }
 
     function top10(){
-      var biggestpay = new Array;
+      var najprodavanije = new Array;
       var object;
       var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "tvrtke.xml", false);
+        xmlhttp.open("GET", "igre.xml", false);
         xmlhttp.send('');
-        xmlDoc = xmlhttp.responseXML.getElementsByTagName("tvrtka");
+        xmlDoc = xmlhttp.responseXML.getElementsByTagName("igra");
      //   console.log(xmlDoc)
       for(var i = 0 ; i< xmlDoc.length ; i++){
-        var placa =xmlDoc[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue;
+        var prodano =xmlDoc[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue;
         var ime =xmlDoc[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue;
-        var imeSefa =xmlDoc[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue;
+        var izdavac =xmlDoc[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue;
         var cijena =xmlDoc[i].getElementsByTagName("cijena")[0].childNodes[0].nodeValue;
         var statusIgre =xmlDoc[i].getElementsByTagName("status")[0].childNodes[0].nodeValue;
-        objectTvrtke = {place: placa.toString() ,imena: ime.toString() , direktor: imeSefa.toString(), cijene: cijena.toString(), statusi: statusIgre.toString()}
-        biggestpay.push(objectTvrtke);
+        objectTvrtke = {primjeraka: prodano.toString() ,imena: ime.toString() , izdavackaKuca: izdavac.toString(), cijene: cijena.toString(), statusi: statusIgre.toString()}
+        najprodavanije.push(objectTvrtke);
       }
-      var filtered = biggestpay.sort(function(a, b) { return a.place < b.place ? 1 : -1; })
+      var filtered = najprodavanije.sort(function(a, b) { return a.primjeraka < b.primjeraka ? 1 : -1; })
                 .slice(0, 10);
 
-        var table = "<tr><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodanih primjeraka</th><th>Status</th></tr>";
-
+        var table = "<tr><th>#</th><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodano primjeraka</th><th>Status</th></tr>";
+        var brojac = 0;
     for (i = 0; i < 10; i++) {
+      brojac++;
       console.log(filtered[i].imena)
-      console.log(filtered[i].direktor)
-      console.log(filtered[i].place)
+      console.log(filtered[i].izdavackaKuca)
+      console.log(filtered[i].primjeraka)
       console.log(filtered[i].cijene)
       console.log(filtered[i].statusi)
         table += "<tr><td>" +
+          brojac + "." +
+          "</td><td>" +
           filtered[i].imena +
           "</td><td>" + 
-          filtered[i].direktor +
+          filtered[i].izdavackaKuca +
           "</td><td>" +
           filtered[i].cijene + " kn" +
           "</td><td>" +
-          filtered[i].place +
+          filtered[i].primjeraka +
           "</td><td>" +
           filtered[i].statusi +
           "</td></tr>";
