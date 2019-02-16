@@ -88,7 +88,7 @@
 <br>
 <br>
 <div align="center">
-    <button id="otvori" class="main" type="button" onclick="generirajImeDirektor();">Sve</button>
+    <button id="otvori" class="main" type="button" onclick="sveIgre();">Sve</button>
     <button class="main" type="button" onclick="top10();">Najprodavanije</button>
     <button class="main" type="button">Nove</button>
     <button class="filter" type="button">Cijena &#8593</button>
@@ -99,15 +99,13 @@
 
 <script>
     window.onload = function() {
- top10();
+ sveIgre();
 };
 
-    var tablicaHide = document.getElementById("tablica")
 
-    function generirajImeDirektor()
+    function sveIgre()
     {
 
-        tablicaHide.style.display = "";
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
@@ -127,13 +125,13 @@
         table += "<tr><td>" +
           x[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue +
           "</td><td>" +
-          x[i].getElementsByTagName("direktor")[0].childNodes[0].nodeValue +
+          x[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue +
           "</td><td>" +
-          x[i].getElementsByTagName("broj_radnika")[0].childNodes[0].nodeValue + " kn" +
+          x[i].getElementsByTagName("cijena")[0].childNodes[0].nodeValue + " kn" +
           "</td><td>" +
-          x[i].getElementsByTagName("prosjecna_placa")[0].childNodes[0].nodeValue +
+          x[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue +
           "</td><td>" +
-          x[i].getElementsByTagName("lokacija")[0].childNodes[0].nodeValue +
+          x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue +
           "</td></tr>";
       }
       document.getElementById("tablica").innerHTML = table;
@@ -148,12 +146,12 @@
         xmlDoc = xmlhttp.responseXML.getElementsByTagName("tvrtka");
      //   console.log(xmlDoc)
       for(var i = 0 ; i< xmlDoc.length ; i++){
-        var placa =xmlDoc[i].getElementsByTagName("prosjecna_placa")[0].childNodes[0].nodeValue;
+        var placa =xmlDoc[i].getElementsByTagName("prodano")[0].childNodes[0].nodeValue;
         var ime =xmlDoc[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue;
-        var imeSefa =xmlDoc[i].getElementsByTagName("direktor")[0].childNodes[0].nodeValue;
-        var cijena =xmlDoc[i].getElementsByTagName("broj_radnika")[0].childNodes[0].nodeValue;
-        var statusIgre =xmlDoc[i].getElementsByTagName("lokacija")[0].childNodes[0].nodeValue;
-        objectTvrtke = {place: placa.toString(),imena: ime.toString() , direktor: imeSefa.toString(), cijene: cijena.toString(), statusi: statusIgre.toString()}
+        var imeSefa =xmlDoc[i].getElementsByTagName("izdavac")[0].childNodes[0].nodeValue;
+        var cijena =xmlDoc[i].getElementsByTagName("cijena")[0].childNodes[0].nodeValue;
+        var statusIgre =xmlDoc[i].getElementsByTagName("status")[0].childNodes[0].nodeValue;
+        objectTvrtke = {place: placa.toString() ,imena: ime.toString() , direktor: imeSefa.toString(), cijene: cijena.toString(), statusi: statusIgre.toString()}
         biggestpay.push(objectTvrtke);
       }
       var filtered = biggestpay.sort(function(a, b) { return a.place < b.place ? 1 : -1; })

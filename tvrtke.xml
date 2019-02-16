@@ -1,120 +1,143 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<poslovne_organizacije>
+<videoigre>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Red Dead Redemption 2</ime>
+  <izdavac>Rockstar Games</izdavac>
+  <cijena>549</cijena>
+  <prodano>7000</prodano>
+  <status>Novo!</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>God of War</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>500</cijena>
+  <prodano>6500</prodano>
+  <status>-</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Metro Exodus</ime>
+  <izdavac>Deep Silver</izdavac>
+  <cijena>549</cijena>
+  <prodano>4800</prodano>
+  <status>Novo!</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Call of Duty: Black Ops IIII</ime>
+  <izdavac>Activision</izdavac>
+  <cijena>459</cijena>
+  <prodano>4500</prodano>
+  <status>Novo!</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Days Gone</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>549</cijena>
+  <prodano>2000</prodano>
+  <status>Prednarudžba.</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Grand Theft Auto V</ime>
+  <izdavac>Rockstar Games</izdavac>
+  <cijena>359</cijena>
+  <prodano>9800</prodano>
+  <status>-</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Minecraft</ime>
+  <izdavac>Microsoft Game Studios</izdavac>
+  <cijena>249</cijena>
+  <prodano>8700</prodano>
+  <status>-</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>The Last of Us II</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>549</cijena>
+  <prodano>4300</prodano>
+  <status>Prednarudžba.</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Sekiro: Shadows Die Twice</ime>
+  <izdavac>Activision</izdavac>
+  <cijena>549</cijena>
+  <prodano>3500</prodano>
+  <status>Prednarudžba.</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>The Elder Scrolls V: Skyrim</ime>
+  <izdavac>Bethesda Softworks</izdavac>
+  <cijena>249</cijena>
+  <prodano>7200</prodano>
+  <status>-</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Fallout 76</ime>
+  <izdavac>Bethesda Softworks</izdavac>
+  <cijena>499</cijena>
+  <prodano>3000</prodano>
+  <status>Novo!</status>
  </tvrtka>
 <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Mafia III</ime>
+  <izdavac>2K Games</izdavac>
+  <cijena>249</cijena>
+  <prodano>5000</prodano>
+  <status>-</status>
  </tvrtka>
  <tvrtka>
-  <ime>Red Dead Redemption</ime>
-  <godina_osnivanja>2018</godina_osnivanja>
-  <direktor>Rockstar Games</direktor>
-  <broj_radnika>549</broj_radnika>
-  <tema_poslovanja>Uvoz i izvoz prerađevina</tema_poslovanja>
-  <prosjecna_placa>10000</prosjecna_placa>
-  <lokacija>Novo!</lokacija>
+  <ime>Overwatch</ime>
+  <izdavac>Blizzard</izdavac>
+  <cijena>249</cijena>
+  <prodano>6400</prodano>
+  <status>-</status>
  </tvrtka>
-</poslovne_organizacije>
+ <tvrtka>
+  <ime>The Legend of Zelda: Breath of the Wild</ime>
+  <izdavac>Nintendo</izdavac>
+  <cijena>499</cijena>
+  <prodano>5200</prodano>
+  <status>-</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>Super Mario Odyssey</ime>
+  <izdavac>Nintendo</izdavac>
+  <cijena>499</cijena>
+  <prodano>3500</prodano>
+  <status>-</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>Assassins Creed Odyssey</ime>
+  <izdavac>Ubisoft</izdavac>
+  <cijena>499</cijena>
+  <prodano>3900</prodano>
+  <status>Novo!</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>Watch Dogs 2</ime>
+  <izdavac>Ubisoft</izdavac>
+  <cijena>249</cijena>
+  <prodano>3200</prodano>
+  <status>-</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>The Witcher 3: Wild Hunt</ime>
+  <izdavac>CD Projekt Red</izdavac>
+  <cijena>299</cijena>
+  <prodano>8500</prodano>
+  <status>-</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>Uncharted 4</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>249</cijena>
+  <prodano>4100</prodano>
+  <status>-</status>
+ </tvrtka>
+ <tvrtka>
+  <ime>Bloodborne</ime>
+  <izdavac>Sony Interactive Entertainment</izdavac>
+  <cijena>349</cijena>
+  <prodano>4900</prodano>
+  <status>-</status>
+ </tvrtka>
+</videoigre>
