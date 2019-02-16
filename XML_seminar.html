@@ -102,14 +102,11 @@
  top10();
 };
 
-    var open = false;
     var tablicaHide = document.getElementById("tablica")
-    var buttonOpen = document.getElementById("otvori")
 
-    function generirajImeDirektor() {
-      open = !open
+    function generirajImeDirektor()
+    {
 
-      if (open) {
         tablicaHide.style.display = "";
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
@@ -119,14 +116,6 @@
         };
         xmlhttp.open("GET", "tvrtke.xml", true);
         xmlhttp.send();
-      }
-      else {
-        buttonOpen.innerHTML = "Sve";
-
-        tablicaHide.style.display = "none";
-      }
-
-
     }
 
     function tablica(xml) {
@@ -162,7 +151,7 @@
       var filtered = biggestpay.sort(function(a, b) { return a.place < b.place ? 1 : -1; })
                 .slice(0, 10);
 
-        var table = "<tr><th>Tvrtka</th><th>Direktor</th><th>Prosjecna Placa</th></tr>";
+        var table = "<tr><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodanih primjeraka</th><th>Status</th></tr>";
 
     for (i = 0; i < 10; i++) {
       console.log(filtered[i].imena)
@@ -174,9 +163,13 @@
           filtered[i].direktor +
           "</td><td>" +
           filtered[i].place +
+          "</td><td>" +
+          filtered[i].place +
+          "</td><td>" +
+          filtered[i].place +
           "</td></tr>";
       }
-      document.getElementById("tablica10").innerHTML = table;
+      document.getElementById("tablica").innerHTML = table;
 
     }
     
