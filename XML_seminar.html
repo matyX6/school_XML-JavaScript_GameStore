@@ -121,13 +121,19 @@
     function tablica(xml) {
       var i;
       var xmlDoc = xml.responseXML;
-      var table = "<tr><th>Igra</th><th>Izdavač</th></tr>";
+      var table = "<tr><th>Igra</th><th>Izdavač</th><th>Cijena</th><th>Prodanih primjeraka</th><th>Status</th></tr>";
       var x = xmlDoc.getElementsByTagName("tvrtka");
       for (i = 0; i < x.length; i++) {
         table += "<tr><td>" +
           x[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue +
           "</td><td>" +
           x[i].getElementsByTagName("direktor")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("broj_radnika")[0].childNodes[0].nodeValue + " kn" +
+          "</td><td>" +
+          x[i].getElementsByTagName("prosjecna_placa")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("lokacija")[0].childNodes[0].nodeValue +
           "</td></tr>";
       }
       document.getElementById("tablica").innerHTML = table;
@@ -145,7 +151,9 @@
         var placa =xmlDoc[i].getElementsByTagName("prosjecna_placa")[0].childNodes[0].nodeValue;
         var ime =xmlDoc[i].getElementsByTagName("ime")[0].childNodes[0].nodeValue;
         var imeSefa =xmlDoc[i].getElementsByTagName("direktor")[0].childNodes[0].nodeValue;
-        objectTvrtke = {place: placa.toString(),imena: ime.toString() , direktor: imeSefa.toString()}
+        var cijena =xmlDoc[i].getElementsByTagName("broj_radnika")[0].childNodes[0].nodeValue;
+        var statusIgre =xmlDoc[i].getElementsByTagName("lokacija")[0].childNodes[0].nodeValue;
+        objectTvrtke = {place: placa.toString(),imena: ime.toString() , direktor: imeSefa.toString(), cijene: cijena.toString(), statusi: statusIgre.toString()}
         biggestpay.push(objectTvrtke);
       }
       var filtered = biggestpay.sort(function(a, b) { return a.place < b.place ? 1 : -1; })
@@ -157,16 +165,18 @@
       console.log(filtered[i].imena)
       console.log(filtered[i].direktor)
       console.log(filtered[i].place)
+      console.log(filtered[i].cijene)
+      console.log(filtered[i].statusi)
         table += "<tr><td>" +
           filtered[i].imena +
           "</td><td>" + 
           filtered[i].direktor +
           "</td><td>" +
-          filtered[i].place +
+          filtered[i].cijene + " kn" +
           "</td><td>" +
           filtered[i].place +
           "</td><td>" +
-          filtered[i].place +
+          filtered[i].statusi +
           "</td></tr>";
       }
       document.getElementById("tablica").innerHTML = table;
